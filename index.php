@@ -187,22 +187,22 @@
                     <tr>
                       <td>1.</td>
                       <td>Joni</td>
-                      <td><button type="button" class="btn btn-block btn-primary">Detail</button></td>
+                      <td><a href="detail_user.php"><button type="button" class="btn btn-block btn-primary">Detail</button></a></td>
                     </tr>
                     <tr>
                       <td>2.</td>
                       <td>Fahmi</td>
-                      <td><button type="button" class="btn btn-block btn-primary">Detail</button></td>
+                      <td><a href="detail_user.php"><button type="button" class="btn btn-block btn-primary">Detail</button></a></td>
                     </tr>
                     <tr>
                       <td>3.</td>
                       <td>Erik</td>
-                      <td><button type="button" class="btn btn-block btn-primary">Detail</button></td>
+                      <td><a href="detail_user.php"><button type="button" class="btn btn-block btn-primary">Detail</button></a></td>
                     </tr>
                     <tr>
                       <td>4.</td>
                       <td>Gatot</td>
-                      <td><button type="button" class="btn btn-block btn-primary">Detail</button></td>
+                      <td><a href="detail_user.php"><button type="button" class="btn btn-block btn-primary">Detail</button></a></td>
                     </tr>
                   </tbody>
                 </table>
