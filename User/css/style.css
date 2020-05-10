@@ -407,6 +407,18 @@ services
     border-radius: 25px;
     background: #0dd774;
 }
+
+.buy-info-btn, .buy-info-btn:hover, .buy-info-btn:focus {
+    margin: 10px 0px 0px 0px;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px #0dd774 solid;
+    border-radius: 25px;
+    background: #0dd774;
+}
 /***************************************
 cta-1
 ***************************************/
