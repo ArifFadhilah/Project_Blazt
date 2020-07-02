@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link href="../../modules/core/common/img/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <!-- VENDORS -->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/jquery-steps/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlvideoplayer/src/player.css">
+    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../vendors/popper.js/dist/umd/popper.js"></script>
+    <script src="../../vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="../../vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../../vendors/spin.js/spin.js"></script>
+    <script src="../../vendors/ladda/dist/ladda.min.js"></script>
+    <script src="../../vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="../../vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="../../vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="../../vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+    <script src="../../vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="../../vendors/moment/min/moment.min.js"></script>
+    <script src="../../vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../../vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="../../vendors/summernote/dist/summernote.min.js"></script>
+    <script src="../../vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../../vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../../vendors/nestable/jquery.nestable.js"></script>
+    <script src="../../vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+    <script src="../../vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="../../vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="../../vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="../../vendors/d3/d3.min.js"></script>
+    <script src="../../vendors/c3/c3.min.js"></script>
+    <script src="../../vendors/chartist/dist/chartist.min.js"></script>
+    <script src="../../vendors/peity/jquery.peity.min.js"></script>
+    <script src="../../vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="../../vendors/nprogress/nprogress.js"></script>
+    <script src="../../vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="../../vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="../../vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="../../vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="../../vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+
+    <!-- CLEAN UI ADMIN TEMPLATE MODULES-->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../modules/core/common/core.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/vendors/common/vendors.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/layouts/common/layouts-pack.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/themes/common/themes.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/menu-left/common/menu-left.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/menu-right/common/menu-right.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/top-bar/common/top-bar.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/footer/common/footer.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/pages/common/pages.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/ecommerce/common/ecommerce.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/apps/common/apps.cleanui.css">
+    <script src="../../modules/menu-left/common/menu-left.cleanui.js"></script>
+    <script src="../../modules/menu-right/common/menu-right.cleanui.js"></script>
+</head>
+<body class="cat__config--vertical cat__menu-left--colorful cat__menu-left--visible">
+
+<nav class="cat__menu-left">
+    <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+        <div class="cat__menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="cat__menu-left__logo">
+        <a href="dashboard.html">
+            <img src="../../modules/dummy-assets/common/img/logo-inverse.png" />
+        </a>
+    </div>
+    <div class="cat__menu-left__inner">
+        <ul class="cat__menu-left__list cat__menu-left__list--root ">
+            <li class="cat__menu-left__item  cat__menu-left__item--disabled">
+                <a href="documentation-index.html">
+				    <span class="cat__menu-left__icon "></span>
+                    Main Navigation
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-home"></span>
+                    Dashboard
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="#">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            Dashboard V2
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="client-logo.html">
+                            <span class="icmn icmn-checkbox-unchecked"></span>&nbsp;
+                            View Client Logo
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="add-client-logo.html">
+                            <span class="icmn-checkbox-unchecked"></span>&nbsp;
+                            Add Client Logo
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-book"></span>
+                    Services
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="view-services.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            View Services
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="add-services.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            Add Services
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="add-parent-services.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            Add Parent Services
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-tab"></span>
+                    Transactions
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="view-transactions.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            View Transactions
+                        </a>
+                    </li>
+                   
+                    
+                </ul>
+            </li>
+
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-display"></span>
+                    Payment Services
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="view-payment-services.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            View Payment Services
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="add-payment-services.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            Add Payment Services
+                        </a>
+                    </li>
+                   
+                    
+                </ul>
+            </li>
+
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-bubbles"></span>
+                    Complaint
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="view-complaint.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            View Complaint
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-users"></span>
+                    Users
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item">
+                        <a href="view-users.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            View Users
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="view-admin.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            View Admin
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item">
+                        <a href="add-admin.html">
+                            <span class="icmn icmn-radio-unchecked"></span>&nbsp;
+                            Add Admin
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="cat__top-bar">
+    <!-- left aligned items -->
+    <div class="cat__top-bar__left">
+        <div class="cat__top-bar__logo">
+            <a href="dashboard.html">
+                <img src="../../modules/dummy-assets/common/img/logo.png" />
+            </a>
+        </div>
+    </div>
+    <!-- right aligned items -->
+    <div class="cat__top-bar__right">
+        
+        
+        
+        <div class="cat__top-bar__item">
+            <div class="dropdown cat__top-bar__avatar-dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="cat__top-bar__avatar" href="javascript:void(0);">
+                        <img src="../../modules/dummy-assets/common/img/avatars/1.jpg" />
+                    </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="account.html"><i class="dropdown-icon icmn-user"></i> Account</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Logout</a>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="cat__content">
+<!-- START: tables/datatables -->
+
+<section class="content-header">
+    <span class="cat__core__title">
+        <strong>Forms</strong>
+        <small>Add Parent Services</small>
+    </span>
+</section>
+
+<section class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <form>
+                    
+                    <div class="form-group">
+                      <label  >Services</label>
+                      <input type="text" class="form-control" placeholder="Enter Services">
+                    </div>
+                    <div class="form-group">
+                        <label  >Price</label>
+                        <input type="number" class="form-control"  placeholder="Enter Price">
+                      </div>
+                      <div class="form-group">
+                        <label  >Description</label>
+                        <textarea class="form-control" placeholder="Enter Description"></textarea>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn  btn-primary">Submit</button>
+                      <button type="submit" class="btn">Cancel</button>
+                  </form>
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+<!-- END: tables/datatables -->
+
+<!-- START: page scripts -->
+<script>
+    $(function(){
+
+        $('#example1').DataTable({
+            responsive: true
+        });
+
+        $('#example2').DataTable({
+            autoWidth: true,
+            scrollX: true,
+            fixedColumns: true
+        });
+
+        $('#example3').DataTable({
+            autoWidth: true,
+            scrollX: true,
+            fixedColumns: true
+        });
+    });
+</script>
+<!-- END: page scripts -->
+
+
+
+</div>
+
+
+
+</body>
+</html>
